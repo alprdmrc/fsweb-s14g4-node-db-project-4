@@ -26,7 +26,7 @@ Ekiple beyin fırtınası yaptıktan sonra, bir tarifin **JSON temsilinin** aşa
 
 ```json
 {
-  "tarif_id" : 1,
+  "tarif_id": 1,
   "tarif_adi": "Spagetti Bolonez",
   "kayit_tarihi": "2021-01-01 08:23:19.120",
   "adimlar": [
@@ -41,9 +41,13 @@ Ekiple beyin fırtınası yaptıktan sonra, bir tarifin **JSON temsilinin** aşa
       "adim_sirasi": 2,
       "adim_talimati": "1 yemek kaşığı zeytinyağı ekleyin",
       "icindekiler": [
-        { "icindekiler_id": 27, "icindekiler_adi": "zeytinyağı", "miktar": 0.014 }
+        {
+          "icindekiler_id": 27,
+          "icindekiler_adi": "zeytinyağı",
+          "miktar": 0.014
+        }
       ]
-    },
+    }
   ]
 }
 ```
@@ -92,7 +96,7 @@ Aşağıdaki işleve sahip bir nesneyi dışa aktaran bir veri erişim dosyası 
   "adımlar": [
     {
       "adim_sirasi": 1,
-      "adim_talimati": "Büyük bir tencereyi orta ateşe koyun",
+      "adim_talimati": "Büyük bir tencereyi orta ateşe koyun"
     },
     {
       "adim_sirasi": 2,
@@ -101,7 +105,7 @@ Aşağıdaki işleve sahip bir nesneyi dışa aktaran bir veri erişim dosyası 
         { "icindekiler_id": 27, "miktar": 2 },
         { "icindekiler_id": 48, "miktar": 0.1 }
       ]
-    },
+    }
   ]
 }
 ```
