@@ -1,10 +1,10 @@
 const router = require("express").Router();
 const Recipes = require("./recipe_model");
+const mw = require("./recipe_middleware");
 
-router.get("/:recipe_id", async (req, res, next) => {
+router.get("/:recipe_id", mw.checkId, (req, res, next) => {
   try {
-    const recipe = await Recipes.findById(req.params.recipe_id);
-    res.json(recipe);
+    res.json(req.currentRecipe);
   } catch (error) {
     next(error);
   }
